@@ -1,6 +1,8 @@
 # pyCapture
 Python 2 tool for capturing analogue SD video from a TV card.
-Porting to python 3
+
+Suggestion: Porting to python 3
+
 Use this tool to capture video from a video recorder without risking lipsynch problems, see howto below.
 
 HOWTO - Capture
