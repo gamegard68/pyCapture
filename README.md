@@ -8,15 +8,20 @@ Use this tool to capture video from a video recorder without risking lipsynch pr
 HOWTO - Capture
 
 ; First before launching tool set input
+
 v4l2-ctl --set-input 1
 
-; Launch the tool 
+
+; Launch the tool
+
 ; If you are having lipsynch issue launch the tool as root with a nice level -10.
+
 ./pyCapture.py
 
 or 
 
 sudo nice -10 ./pyCapture.py
+
 
 ; The tool uses the gstreamer library, so you can also use gst-launch to capture instead, see examples below:
 
