@@ -16,7 +16,11 @@ v4l2-ctl --set-input 1
 
 ; If you are having lipsynch issue launch the tool as root with a nice level -10.
 
-; Usage: -o outputfile* -e tape_duration
+; Usage: pyCapture.py -o <capture_mjpeg.avi> -e <HH:MM:SS>
+
+; -o outputfilename, -e tape duration in HH:MM:SS
+
+; Example
 
 ./pyCapture.py -o capture_vhs_mybirthday.avi -e 00:36:20
 
