@@ -35,14 +35,14 @@ def parse_opts(argv):
         opts, args = getopt.getopt(argv,"ho:e:")
         if not opts:
             print 'No options supplied'
-            print 'Usage: parseopts.py -o <capture_mjpeg.avi> -e <HH:MM:SS>'
+            print 'Usage: pyCapture.py -o <capture_mjpeg.avi> -e <HH:MM:SS>'
             sys.exit(2)
     except getopt.GetoptError:
-        print 'parseopts.py -o <capture_mjpeg.avi> -e <HH:MM:SS>'
+        print 'pyCapture.py -o <capture_mjpeg.avi> -e <HH:MM:SS>'
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print 'parseopts.py -o <capture_mjpeg.avi> -e <HH:MM:SS>'
+            print 'pyCapture.py -o <capture_mjpeg.avi> -e <HH:MM:SS>'
             sys.exit()
         elif opt == '-e':
             timestr = arg
