@@ -16,7 +16,7 @@ v4l2-ctl --set-input 1
 
 ; If you are having lipsynch issue launch the tool as root with a nice level -10.
 
-; Usage: -o outputfile -e tape_duration
+; Usage: -o outputfile* -e tape_duration
 
 ./pyCapture.py -o capture_vhs_mybirthday.avi -e 00:36:20
 
@@ -24,6 +24,7 @@ or
 
 sudo nice --10 ./pyCapture.py -o capture_vhs_mybirthday.avi -e 00:36:20
 
+; *Outfile is an mjpeg file (motion picture jpeg)
 
 ; The tool uses the gstreamer library, so you can also use gst-launch to capture instead, see examples below:
 
