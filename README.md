@@ -28,6 +28,7 @@ sudo nice --10 ./pyCapture.py -o capture_vhs_mybirthday.avi -e 00:36:20
 ; The tool uses the gstreamer library, so you can also use gst-launch to capture instead, see examples below:
 
 ; Set the input
+
 v4l2-ctl --set-input 1
 
 sudo nice --10 gst-launch-0.10 -e v4l2src device=/dev/video0 norm=PAL-BG do-timestamp=true ! 'video/x-raw-yuv,format=(fourcc)YV12,width=720,height=576,framerate=25/1' ! queue ! cogcolorspace ! videorate ! 'video/x-raw-yuv,format=(fourcc)YV12,framerate=25/1' ! queue ! jpegenc ! queue ! mux. alsasrc device=hw:2,0 buffer-time=2000000 do-timestamp=true ! 'audio/x-raw-int,rate=32000,channels=1,depth=16' ! queue ! audioconvert ! queue ! mux. avimux name=mux ! filesink location=capture_test.avi
