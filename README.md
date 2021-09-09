@@ -45,13 +45,18 @@ HOWTO - Encode to x264
 Handbrake
 
 Storage Custom 512x384
+
 Denoise Weak
+
 Decomb Fast
+
 Crop: H:2x14 / V:2x12
+
 
 Audio: mono mp3 lame 64kbps
 
 Advanced Encoding Settings
+
 level=4.0:vbv-bufsize=25000:vbv-maxrate=20000:8x8dct=0:b-adapt=2:psy-rd=1|0.2:ref=5:bframes=4
 
 
