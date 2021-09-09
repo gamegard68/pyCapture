@@ -13,7 +13,7 @@ v4l2-ctl --set-input 1
 
 
 ; Launch the tool
-;
+
 ; If you are having lipsynch issue launch the tool as root with a nice level -10.
 
 ; Usage: -o outputfile -e tape_duration
