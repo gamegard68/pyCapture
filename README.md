@@ -64,6 +64,8 @@ Advanced Encoding Settings
 
 level=4.0:vbv-bufsize=25000:vbv-maxrate=20000:8x8dct=0:b-adapt=2:psy-rd=1|0.2:ref=5:bframes=4
 
-
+Hardware
+--------
+Tested successfully with the CTX953_V.1.3.1 TV/DVB-T-Tuner Card on Linux.
 
 
